@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Open+Sans:wght@300&family=Lato:wght@100&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            margin-left: 0;
+        }
+        .main {
+            display: inline-flex;
+            flex-wrap: wrap;
+            /* border: 2px solid black; */
+            width: 100%;
+            padding: 40px;
+            margin-top: 0;
+            background-color: white;
+            height: 50px;
+            position: fixed;
+        }
+
+        .left {
+            padding-top: 14px;
+            margin-left: 30px;
+            display: inline-block;
+            position: fixed;
+            /* border: 2px solid black; */
+        }
+
+        .right {
+            right: 0;
+            padding-right: 50px;
+            position: fixed;
+            /* border: 2px solid black; */
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+            /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  */
+            /* text-decoration-thickness: 1; */
+            font-family: 'Roboto', sans-serif;
+        }
+        li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .lt{
+            margin-left: 40px;
+        }
+        .rt{
+            /* border: 2px solid black; */
+            width: 40%;
+            text-align: center;
+        }
+        .right li a:hover{ color: #0150ff;}
+
+        a .bi{
+            display: inline;
+            padding-right: 15px;
+        }
+        footer .lt, footer .rt {
+            display: inline-block;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+        footer .rt{
+            float: inline-end;
+            padding-right: 30px;
+        }
+
+        .resume{
+            /* display: grid; */
+            /* grid-template-columns: 5fr 7fr; */
+            height: 390vh;
+            width: 100%;
+            margin-top: 0px;
+            padding-top: 220px;
+            text-align: center;
+            background-color: #e6dacf;
+            /* margin-bottom: 10px; */
+        }
+        .resume table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn{
+            width: 150px;
+            height: 40px;
+            border-radius: 50px;
+            border: 2px solid #0150ff;
+            background-color: #0150ff;
+            color: white;
+            text-align: center;
+            margin-left: 200px;
+            margin-top: 15px;
+        }
+        .btn:hover{
+            background-color: #e6dacf;
+            color: black;
+        }
+        .card{
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            margin-top: 50px;
+            margin-left: 260px;
+            padding: 20px;
+            width: 700px;
+            height: 50vh;
+            background-color: #ffffff;
+            box-shadow: -7px 7px 20px rgba(0, 0, 0, 0.2);
+        }
+        .txt{
+            margin-left: 260px;
+            text-align: left;
+        }
+
+        .card .rcd{
+            margin-top: 50px;
+            font-family: 'Roboto', sans-serif;
+            text-align: left;
+            padding-left: 50px;
+            line-height: 0.6;
+        }
+        .card .lcd{
+            margin-top: 70px;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            font-size: 30;
+            line-height: 1.4;
+            padding-right: 20px;
+            font-family: 'Roboto', sans-serif;
+            text-align: left;
+        }
+        .card-head{
+            color: #0150ff;
+            font-weight: bolder;
+        }
+        .card2{
+            margin-top: 50px;
+            margin-left: 260px;
+            padding-left: 50px;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            width: 700px;
+            height: 60vh;
+            background-color: #ffffff;
+        }
+        .box{
+            height: 12px; 
+            width: 12px; 
+            background-color: #0150ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <table>
+                <tr>
+                    <td><div style="height: 16px; width: 16px; background-color: #0150ff;"></div></td>
+                    <td><span><b style="font-size: x-large;">&nbsp;RB</b> / WEB DEV</span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="./resume1.html">ABOUT ME</a></li>
+                <li><a href="./resume2.html" style="color: #0150ff;">RESUME</a></li>
+                <li><a href="./resume3.html">PROJECT</a></li>
+                <li><a href="./resume4.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="resume">
+        <table>
+            <tr>
+                <td><div class="font" style="height: 16px; width: 16px; background-color: #0150ff;"></div></td>
+                <td><h1>RESUME</h1></td>
+            </tr>
+        </table><br><br>
+        <div style="display: grid; grid-template-columns: 6fr 6fr;">
+            <h2>Experience</h2><input type="button" class="btn" value="DOWNLOAD CV">
+        </div>
+
+        <div class="card">
+            <div class="rcd">
+                <h3 class="card-head">2035 - Present</h3>
+                <h4 class="card-sub">JOB POSITION</h4>
+                <h5>Company Name</h5>
+                <h5>Company Location</h5>
+            </div>
+            <div class="lcd">
+                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p><br>
+                <p>I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="rcd">
+                <h3 class="card-head">2035 - Present</h3>
+                <h4 class="card-sub">JOB POSITION</h4>
+                <h5>Company Name</h5>
+                <h5>Company Location</h5>
+            </div>
+            <div class="lcd">
+                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p><br>
+                <p>I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            </div>
+        </div><br><br><br><br>
+
+        <h2 class="txt">Education</h2>
+
+        <div class="card">
+            <div class="rcd">
+                <h3 class="card-head">2035 - Present</h3>
+                <h4 class="card-sub">UNIVERSITY NAME</h4>
+                <h5>Degree Level</h5>
+                <h5>University Location</h5>
+            </div>
+            <div class="lcd">
+                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p><br>
+                <p>I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="rcd">
+                <h3 class="card-head">2035 - Present</h3>
+                <h4 class="card-sub">UNIVERSITY NAME</h4>
+                <h5>Degree Level</h5>
+                <h5>University Location</h5>
+            </div>
+            <div class="lcd">
+                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p><br>
+                <p>I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            </div>
+        </div>
+
+        <div class="card2">
+            <table align="left" style="text-align: left; border-spacing: 0 20px;" width="500px">
+                <tr>
+                    <th colspan="4"><h1>Professional skillset</h1></th>
+                </tr>
+                <tr>
+                    <td><div class="box"></div></td>
+                    <td>Entrepreneurial Mindset</td>
+                    <td><div class="box"></div></td>
+                    <td>Go-to-Market Planning</td>
+                </tr>
+                <tr>
+                    <td><div class="box"></div></td>
+                    <td>Teamwork & Collaboration</td>
+                    <td><div class="box"></div></td>
+                    <td>Digital Analytics</td>
+                </tr>
+                <tr>
+                    <th colspan="4"><h1>Languages</h1></th>
+                </tr>
+                <tr>
+                    <td><div class="box"></div></td>
+                    <td>English (native)&nbsp;</td>
+                    <td><div class="box"></div></td>
+                    <td>French (proficient)&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><div class="box"></div></td>
+                    <td>Spanish (proficient)&nbsp;</td>
+                    <td><div class="box"></div></td>
+                    <td>Hindi (proficient)&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="lt">
+            <table>
+                <tr>
+                    <td>&copy; 2024 by Rishi Baranwal.</td>
+                </tr>
+                <tr>
+                    <td>Powered and secured by <u>Win</u></td>
+                </tr>
+            </table>
+        </div>
+        <div class="rt">
+            <table width="100%">
+                <tr>
+                    <th>Call</th>
+                    <th>Write</th>
+                    <th>Follow</th>
+                </tr>
+                <tr>
+                    <td>123-456-7890</td>
+                    <td>info@mysite.com</td>
+                    <td>
+                        <a href=""><p class="bi bi-facebook"></p></a>
+                        <a href=""><p class="bi bi-twitter"></p></a>
+                        <a href=""><p class="bi bi-linkedin"></p></a>
+                        <a href=""><p class="bi bi-instagram"></p></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+</body>
+</html>
