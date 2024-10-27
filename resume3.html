@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Open+Sans:wght@300&family=Lato:wght@100&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            margin-left: 0;
+        }
+        .main {
+            display: inline-flex;
+            flex-wrap: wrap;
+            /* border: 2px solid black; */
+            width: 100%;
+            padding: 40px;
+            margin-top: 0;
+            background-color: white;
+            height: 50px;
+            position: fixed;
+        }
+
+        .left {
+            padding-top: 14px;
+            margin-left: 30px;
+            display: inline-block;
+            position: fixed;
+            /* border: 2px solid black; */
+        }
+
+        .right {
+            right: 0;
+            padding-right: 50px;
+            position: fixed;
+            /* border: 2px solid black; */
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+            /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  */
+            /* text-decoration-thickness: 1; */
+            font-family: 'Roboto', sans-serif;
+        }
+        li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .lt{
+            margin-left: 40px;
+        }
+        .rt{
+            /* border: 2px solid black; */
+            width: 40%;
+            text-align: center;
+        }
+        .right li a:hover{ color: #0150ff;}
+
+        a .bi{
+            display: inline;
+            padding-right: 15px;
+        }
+        footer .lt, footer .rt {
+            display: inline-block;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        footer .rt{
+            float: inline-end;
+            padding-right: 30px;
+        }
+
+        .resume{
+            /* display: grid; */
+            /* grid-template-columns: 5fr 7fr; */
+            height: 255vh;
+            width: 100%;
+            margin-top: 0px;
+            padding-top: 220px;
+            text-align: center;
+            justify-content: center;
+            background-color: #e6dacf;
+            /* margin-bottom: 10px; */
+        }
+        .resume table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card{
+            display: grid;
+            grid-template-columns: 7fr 5fr;
+            margin-top: 50px;
+            margin-left: 260px;
+            padding: 0;
+            width: 750px;
+            height: 60vh;
+            background-color: #ffffff;
+            box-shadow: -5px 7px 20px rgba(0, 0, 0, 0.2);
+        }
+        .resume .p{
+            width: 710px;
+            height: 80px;
+            margin-left: 180px;
+            padding-left: 100px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            font-size: 30;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.5;
+            font-weight: bold;
+        }
+
+        .card .lc{
+            margin-top: 60px;
+        }
+        .lc .t1{
+            color: #0150ff;
+            font-size: large;
+            font-weight: bolder;
+            padding-left: 20px;
+        }
+        .lc .t2{
+            text-align: left;
+            padding-left: 20px;
+        }
+        .card .rc{
+            margin: 0;
+            padding: 0;
+            height: 60vh;
+            /* border: 2px solid black; */
+        }
+        .rc img{
+            height: 100%;
+            width: 100%;
+        }
+        .box{
+            /* margin-top: 60px; */
+            height: 50px;
+            width: 11px;
+            background-color: #0150ff;
+            margin-left: -3px;
+        }
+        .card-p{
+            padding: 40px;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            font-size: 30;
+            text-align: left;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <table>
+                <tr>
+                    <td><div style="height: 16px; width: 16px; background-color: #0150ff;"></div></td>
+                    <td><span><b style="font-size: x-large;">&nbsp;RB</b> / WEB DEV</span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="./resume1.html">ABOUT ME</a></li>
+                <li><a href="./resume2.html">RESUME</a></li>
+                <li><a href="./resume3.html" style="color: #0150ff;">PROJECT</a></li>
+                <li><a href="./resume4.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="resume">
+        <table>
+            <tr>
+                <td><div style="height: 16px; width: 16px; background-color: #0150ff;"></div></td>
+                <td><h1>PROJECTS</h1></td>
+            </tr>
+        </table><br>
+        <div class="p">
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+        </div><br>
+        
+        <!-- <div style="display: grid; grid-template-columns: 6fr 6fr;">
+            <h2>Experience</h2><input type="button" class="btn" value="DOWNLOAD CV">
+        </div> -->
+
+        <div class="card">
+            <div class="lc">
+                <table align="left">
+                    <tr>
+                        <td rowspan="2"><div class="box"></div></td>
+                        <td><div class="t1"><b>Project name 01</b></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="t2">Role Title</div></td>
+                    </tr>
+                </table><br><br>
+                <p class="card-p">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            </div>
+            <div class="rc"><img src="../assets/images/Leaflet.jpg"></div>
+        </div>
+
+        <div class="card">
+            <div class="lc">
+                <table align="left">
+                    <tr>
+                        <td rowspan="2"><div class="box"></div></td>
+                        <td><div class="t1"><b>Project name 02</b></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="t2">Role Title</div></td>
+                    </tr>
+                </table><br><br>
+                <p class="card-p">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            </div>
+            <div class="rc"><img src="../assets/images/Website_Mockup.webp"></div>
+        </div>
+
+        <div class="card">
+            <div class="lc">
+                <table align="left">
+                    <tr>
+                        <td rowspan="2"><div class="box"></div></td>
+                        <td><div class="t1"><b>Project name 03</b></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="t2">Role Title</div></td>
+                    </tr>
+                </table><br><br>
+                <p class="card-p">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            </div>
+            <div class="rc"><img src="../assets/images/App Screen.webp"></div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="lt">
+            <table>
+                <tr>
+                    <td>&copy; 2024 by Rishi Baranwal.</td>
+                </tr>
+                <tr>
+                    <td>Powered and secured by <u>Win</u></td>
+                </tr>
+            </table>
+        </div>
+        <div class="rt">
+            <table width="100%">
+                <tr>
+                    <th>Call</th>
+                    <th>Write</th>
+                    <th>Follow</th>
+                </tr>
+                <tr>
+                    <td>123-456-7890</td>
+                    <td>info@mysite.com</td>
+                    <td>
+                        <a href=""><p class="bi bi-facebook"></p></a>
+                        <a href=""><p class="bi bi-twitter"></p></a>
+                        <a href=""><p class="bi bi-linkedin"></p></a>
+                        <a href=""><p class="bi bi-instagram"></p></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+</body>
+</html>
