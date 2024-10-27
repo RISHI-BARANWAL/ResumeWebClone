@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Open+Sans:wght@300&family=Lato:wght@100&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            margin-left: 0;
+        }
+        .main {
+            display: inline-flex;
+            flex-wrap: wrap;
+            /* border: 2px solid black; */
+            width: 100%;
+            padding: 40px;
+            margin-top: 0;
+            background-color: white;
+            height: 50px;
+            position: fixed;
+        }
+
+        .left {
+            padding-top: 14px;
+            margin-left: 30px;
+            display: inline-block;
+            position: fixed;
+            /* border: 2px solid black; */
+        }
+
+        .right {
+            right: 0;
+            padding-right: 50px;
+            position: fixed;
+            /* border: 2px solid black; */
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+            /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  */
+            /* text-decoration-thickness: 1; */
+            font-family: 'Roboto', sans-serif;
+        }
+        li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .lt{
+            margin-left: 40px;
+        }
+        .rt{
+            /* border: 2px solid black; */
+            width: 40%;
+            text-align: center;
+        }
+        .right li a:hover{ color: #0150ff;}
+
+        a .bi{
+            display: inline;
+            padding-right: 15px;
+        }
+        footer .lt, footer .rt {
+            display: inline-block;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        footer .rt{
+            float: inline-end;
+            padding-right: 30px;
+        }
+
+        .resume table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .resume{
+            height: 118vh;
+            width: 100%;
+            margin-top: 0px;
+            padding-top: 170px;
+            text-align: center;
+            justify-content: center;
+            background-color: #e6dacf;
+            /* margin-bottom: 10px; */
+        }
+
+        .card{
+            /* display: grid;
+            grid-template-columns: 7fr 5fr; */
+            margin-top: 20px;
+            margin-left: 300px;
+            padding: 70px;
+            width: 540px;
+            height: 68vh;
+            background-color: #ffffff;
+            box-shadow: -7px 7px 20px rgba(0, 0, 0, 0.2);
+        }
+        .u{
+            border: none;
+            border-bottom: 2px solid #000;  /* Adds underline */
+            outline: none;                    /* Removes the focus outline */
+            background: transparent;          /* Removes background */
+            width: 95%;                      /* Optional: make it full-width */
+            padding: 5px 0;                   /* Optional: space above and below */
+            font-size: 16px;                  /* Adjust text size */
+            color: #0150ff;
+            font-size: medium;
+            resize: none;
+            /* line-height: 1.8; */
+        }
+        .u:hover{
+            border-bottom: 2px solid #0150ff;
+        }
+        .btn{
+            width: 150px;
+            height: 40px;
+            border-radius: 50px;
+            border: 2px solid #0150ff;
+            background-color: #0150ff;
+            color: white;
+            text-align: center;
+            margin-left: -400px;
+            margin-top: 15px;
+        }
+        .btn:hover{
+            background-color: #ffffff;
+            color: black;
+        }
+    </style>
+
+<script>
+    function val() {
+        // Regex patterns
+        const nameRegex = /^[a-zA-Z]{2,}(?: [a-zA-Z]+)*$/;
+        const emailRegex = /^[a-z0-9]([\.{1}])?([a-z0-9.]+){1,25}\@gmail[\.]com$/ ;
+        const subjectRegex = /^[\w\s]{2,}$/;
+        const messageRegex = /^.{1,}$/;
+    
+        // Get form values
+        const firstName = document.getElementById("firstName").value;
+        const lastName = document.getElementById("lastName").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+    
+        // Validation
+        if (!nameRegex.test(firstName)) {
+            alert("Please enter a valid first name.");
+            return false;
+        }
+        if (!nameRegex.test(lastName)) {
+            alert("Please enter a valid last name.");
+            return false;
+        }
+        if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+            return false;
+        }
+        if (!subjectRegex.test(subject)) {
+            alert("Please enter a valid subject.");
+            return false;
+        }
+        if (!messageRegex.test(message)) {
+            alert("Message cannot be empty.");
+            return false;
+        }
+    
+        // Display form details in an alert
+        alert("Form submitted successfully!\n\n" +
+              "Details:\n" +
+              "First Name: " + firstName + "\n" +
+              "Last Name: " + lastName + "\n" +
+              "Email: " + email + "\n" +
+              "Subject: " + subject + "\n" +
+              "Message: " + message);
+    
+        return true;  // You can add form submission logic here if needed
+    }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <table>
+                <tr>
+                    <td><div style="height: 16px; width: 16px; background-color: #0150ff;"></div></td>
+                    <td><span><b style="font-size: x-large;">&nbsp;RB</b> / WEB DEV</span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="./resume1.html">ABOUT ME</a></li>
+                <li><a href="./resume2.html">RESUME</a></li>
+                <li><a href="./resume3.html">PROJECT</a></li>
+                <li><a href="./resume4.html" style="color: #0150ff;">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="resume">
+        <table>
+            <tr>
+                <td><div style="height: 16px; width: 16px; background-color: #0150ff;"></div></td>
+                <td><h1>Let's Talk</h1></td>
+            </tr>
+        </table><br>
+
+        <div class="card">
+            <form>
+            <table style="text-align: left; border-spacing: 0 15px;">
+                <tr>
+                    <td>First Name *</td>
+                    <td>Last Name *</td>
+                </tr>
+                <tr>
+                    <td><input type="text" style="width: 90%;" class="u" id="firstName" autofocus></td>
+                    <td><input type="text" style="width: 90%; justify-content: right;" class="u" id="lastName"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Email *</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="email" size="100" class="u" id="email"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Subject</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" size="100" class="u" id="subject"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Message</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea size="100" class="u" rows="4" placeholder="" id="message"></textarea></td>
+                </tr>
+            </table>
+            <input type="button" value="Send" class="btn" onclick="val()">
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="lt">
+            <table>
+                <tr>
+                    <td>&copy; 2024 by Rishi Baranwal.</td>
+                </tr>
+                <tr>
+                    <td>Powered and secured by <u>Win</u></td>
+                </tr>
+            </table>
+        </div>
+        <div class="rt">
+            <table width="100%">
+                <tr>
+                    <th>Call</th>
+                    <th>Write</th>
+                    <th>Follow</th>
+                </tr>
+                <tr>
+                    <td>123-456-7890</td>
+                    <td>info@mysite.com</td>
+                    <td>
+                        <a href=""><p class="bi bi-facebook"></p></a>
+                        <a href=""><p class="bi bi-twitter"></p></a>
+                        <a href=""><p class="bi bi-linkedin"></p></a>
+                        <a href=""><p class="bi bi-instagram"></p></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+</body>
+</html>
